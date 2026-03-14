@@ -1,0 +1,89 @@
+body{
+font-family:Poppins;
+background:linear-gradient(135deg,#667eea,#764ba2);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0;
+color:white;
+}
+
+.container{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:15px;
+width:500px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.subtitle{
+opacity:0.8;
+margin-bottom:20px;
+}
+
+.upload-box{
+border:2px dashed white;
+padding:30px;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.upload-box:hover{
+background:rgba(255,255,255,0.1);
+}
+
+input[type="file"]{
+display:none;
+}
+
+audio{
+margin-top:15px;
+width:100%;
+}
+
+button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#ff7a18;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff9a44;
+}
+
+.result{
+margin-top:30px;
+text-align:left;
+}
+
+#sentimentBadge{
+padding:8px 16px;
+border-radius:20px;
+font-weight:bold;
+}
+
+.loader{
+border:5px solid #f3f3f3;
+border-top:5px solid #ff7a18;
+border-radius:50%;
+width:40px;
+height:40px;
+animation:spin 1s linear infinite;
+margin:20px auto;
+display:none;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Speech Analyzer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎙 AI Speech Sentiment Analyzer</h1>
+
+<p class="subtitle">
+Upload an audio file to transcribe and analyze sentiment
+</p>
+
+<div class="upload-box" id="drop-area">
+
+<input type="file" id="audioFile" accept="audio/*">
+
+<label for="audioFile">
+
+📂 Drag & Drop Audio or Click to Upload
+
+</label>
+
+</div>
+
+<audio id="audioPreview" controls></audio>
+
+<button id="analyzeBtn">Analyze Audio</button>
+
+<div class="loader" id="loader"></div>
+
+<div class="result" id="result">
+
+<h2>Transcription</h2>
+<p id="transcription"></p>
+
+<h2>Sentiment</h2>
+<span id="sentimentBadge"></span>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
